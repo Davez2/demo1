@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:MySql://localhost:3306/book
+    username: root
+    password: root
+
+    jpa:
+      hibernate:
+        ddl-auto: update # When you launch the application for the first time - switch "none" at "create"
+      show-sql: true
+      database: mysql
+      database-platform: org.hibernate.dialect.MySQLDialect
+      open-in-view: false
+      generate-ddl: true
+    # Server configuration
+    server:
+      port: 8087 #set your port: true
